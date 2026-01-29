@@ -1,0 +1,8 @@
+@use './styles/index';
+
+html,
+body {
+  font-family: typography.$font-family-base;
+  background-color: colors.$color-gray-100;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+/* Angular Material theming */
+@use './styles/material/material';
+
+/* App design tokens */
+@use './styles/tokens';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
