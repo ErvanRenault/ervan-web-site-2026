@@ -1,8 +1,117 @@
-@use './styles/index';
+@use '@angular/material' as mat;
 
-html,
-body {
-  font-family: typography.$font-family-base;
-  background-color: colors.$color-gray-100;
-  margin: 0;
-}
+// Primary palette (00E5FF)
+$primary: (
+  50: #E0FFFF,
+  100: #B3FFFF,
+  200: #80FFFF,
+  300: #4DFFFF,
+  400: #1CFFFF,
+  500: #00E5FF,
+  600: #00D0E5,
+  700: #00B8CC,
+  800: #00A0B3,
+  900: #007A80,
+  A100: #B3FFFF,
+  A200: #80FFFF,
+  A400: #00E5FF,
+  A700: #00B8CC,
+  contrast: (
+    50: #000000, // black 87% contrast
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF, // white for dark backgrounds
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+    A100: #000000,
+    A200: #FFFFFF,
+    A400: #FFFFFF,
+    A700: #FFFFFF
+  )
+);
+
+// Secondary palette (7B61FF)
+$secondary: (
+  50: #EAE6FF,
+  100: #CFC8FF,
+  200: #B3AAFF,
+  300: #998CFF,
+  400: #836FFF,
+  500: #7B61FF,
+  600: #6C57E5,
+  700: #5D4CCC,
+  800: #4F41B3,
+  900: #3A3080,
+  A100: #CFC8FF,
+  A200: #998CFF,
+  A400: #7B61FF,
+  A700: #5D4CCC,
+  contrast: (
+    50: #000000, // black 87% contrast
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF, // white for dark backgrounds
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+    A100: #000000,
+    A200: #FFFFFF,
+    A400: #FFFFFF,
+    A700: #FFFFFF
+  )
+);
+
+// Tertiary palette (FF2A66)
+$tertiary: (
+  50: #FFE0EB,
+  100: #FFB3CC,
+  200: #FF80AA,
+  300: #FF4D88,
+  400: #FF1F6E,
+  500: #FF2A66,
+  600: #E5235C,
+  700: #CC1D52,
+  800: #B31648,
+  900: #800D34,
+  A100: #FFB3CC,
+  A200: #FF4D88,
+  A400: #FF2A66,
+  A700: #CC1D52,
+  contrast: (
+    50: #000000, // black 87% contrast
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF, // white for dark backgrounds
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+    A100: #000000,
+    A200: #FFFFFF,
+    A400: #FFFFFF,
+    A700: #FFFFFF
+  )
+);
+
+// Primary
+$primary-palette: mat.m2-define-palette($primary, 500);
+
+// Secondary
+$secondary-palette: mat.m2-define-palette($secondary, A200, A100, A400);
+
+// Tertiary
+$tertiary-palette: mat.m2-define-palette($tertiary, A200, A100, A400);
+
+// Warn
+$warn-palette: mat.m2-define-palette(mat.$m2-red-palette);
+
+
