@@ -7,10 +7,11 @@ body {
   height: 100dvh;
   width: 100%;
   display: flex;
+  justify-content: center;
   margin: 0;
   background-color: colors.$background-primary;
 
   app-route {
-    flex: 1;
+    display: flex;
   }
 }

@@ -1,10 +1,30 @@
 @use 'colors' as color;
-
 :host {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
+  gap: var(--gap-md);
   height: 100%;
   width: 100%;
+}
+
+.menu-item {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-xxl);
+  font-weight: 500;
+  color: color.$cyan;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item.selected::before {
+  content: "[ ";
+}
+
+.menu-item.selected::after {
+  content: " ]";
 }
