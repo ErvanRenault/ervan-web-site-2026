@@ -1,3 +1,4 @@
+@use 'colors' as color;
 :root {
 
   // Typo
@@ -26,6 +27,9 @@
   --gap-sm: 4px;
   --gap-md: 8px;
   --gap-lg: 10px;
-  --gap-xl: 12px
+  --gap-xl: 12px;
 
+
+  --cyan: #{color.$cyan};
+  --magenta: #{color.$magenta};
 }

@@ -1,0 +1,36 @@
+@use 'colors';
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  opacity: 30%;
+}
+
+.bottom-arrow-container {
+  display: flex;
+}
+
+.arrow-container {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--cyan);
+  cursor: pointer;
+}
+
+.arrow-container:hover {
+  background-color: lightgray;
+}
+
+.arrow-container:active {
+  background-color: lightgray;
+}
+
+.arrow {
+  color: var(--magenta);
+}
+
+

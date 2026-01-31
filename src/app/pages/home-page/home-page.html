@@ -1,3 +1,9 @@
 @for (menu of menuItems; track menu) {
   <span  [class.selected]="menu == selected()" class="menu-item" (mouseenter)="updatePreSelectMenu(menu)">{{menu}}</span>
 }
+
+
+
+
+<!-- Arrows -->
+<app-direction-arrows></app-direction-arrows>
