@@ -1,9 +1,14 @@
 @for (menu of menuItems; track menu) {
-  <span  [class.selected]="menu == selected()" class="menu-item" (mouseenter)="updatePreSelectMenu(menu)">{{menu}}</span>
+  <div
+    tabindex="0"
+    class="menu-item"
+    [class.selected]="menu === selected()"
+    (click)="goToPage(menu.route)"
+    (mouseenter)="updatePreSelectMenu(menu)"
+  >
+    {{ menu.label }}
+  </div>
 }
-
-
-
 
 <!-- Arrows -->
 <app-direction-arrows></app-direction-arrows>
