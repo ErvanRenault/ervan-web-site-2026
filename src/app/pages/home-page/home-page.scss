@@ -14,7 +14,7 @@
   font-family: var(--font-family-base);
   font-size: var(--font-size-xxl);
   font-weight: 500;
-  color: color.$cyan;
+  color: var(--primary);
 }
 
 .menu-item:hover {

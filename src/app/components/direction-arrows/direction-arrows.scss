@@ -8,6 +8,7 @@
   right: 20px;
   bottom: 20px;
   opacity: 30%;
+  pointer-events: none;
 }
 
 .bottom-arrow-container {
@@ -17,15 +18,10 @@
 .arrow-container {
   width: 25px;
   height: 25px;
-  border: 1px solid var(--cyan);
-  cursor: pointer;
+  border: 1px solid var(--primary);
 }
 
 .arrow-container.active {
-  background-color: lightgray;
-}
-
-.arrow-container:hover {
   background-color: lightgray;
 }
 
@@ -34,7 +30,7 @@
 }
 
 .arrow {
-  color: var(--magenta);
+  color: var(--secondary);
 }
 
 

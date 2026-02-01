@@ -30,6 +30,7 @@
   --gap-xl: 12px;
 
 
-  --cyan: #{color.$cyan};
-  --magenta: #{color.$magenta};
+  --primary: #{color.$cyan};
+  --secondary: #{color.$magenta};
+  --tertiary: #{color.$purple};
 }
