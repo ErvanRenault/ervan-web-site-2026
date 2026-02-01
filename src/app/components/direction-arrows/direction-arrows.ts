@@ -33,45 +33,16 @@ export class DirectionArrows {
     this.updateTouchArrowValue(DirectionArrowEnum.Right);
   }
 
-  public idUp = 'up';
-  public idDown = 'down';
-  public idLeft = 'left';
-  public idRight = 'right';
-
   constructor(private arrowTouchService: DirectionArrowService) {
   }
 
   updateTouchArrowValue(directionEnum: DirectionArrowEnum) {
     this.arrowTouchService.directionSignal.set(directionEnum);
 
-    let direction: string | null = null;
-
-    switch (directionEnum) {
-      case DirectionArrowEnum.Up:
-        direction = this.idUp;
-        break;
-      case DirectionArrowEnum.Down:
-        direction = this.idDown;
-        break;
-      case DirectionArrowEnum.Left:
-        direction = this.idLeft;
-        break;
-      case DirectionArrowEnum.Right:
-        direction = this.idRight;
-        break;
-      default:
-        direction = null;
-        break;
-    }
-
-    if(direction) {
-      document.getElementById(direction)?.classList.toggle('active');
-      setTimeout(() => {
-        document.getElementById(direction)?.classList.remove('active');
-      }, 200)
-    }
-
-
+    document.getElementById(directionEnum.toString())?.classList.toggle('active');
+    setTimeout(() => {
+      document.getElementById(directionEnum.toString())?.classList.remove('active');
+    }, 200)
 
   }
 
