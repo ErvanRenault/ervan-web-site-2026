@@ -21,6 +21,7 @@ export class SoundService {
     if (!this.isBrowser || !this.audio) return;
 
     this.audio.currentTime = 0;
+    this.audio.volume = 0.2;
     this.audio.play().catch(() => {});
   }
 }

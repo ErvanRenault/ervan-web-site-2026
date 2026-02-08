@@ -1,0 +1,51 @@
+@use 'colors';
+@use 'mixins';
+
+$border: 1px;
+:host {
+  display: flex;
+  flex: 1;
+  padding: var(--gap-lg);
+  background: /* top */
+    linear-gradient(to right, var(--primary), colors.$cyan) top / 100% $border no-repeat,
+      /* right */
+    linear-gradient(to bottom, var(--primary), white) right / $border 100% no-repeat,
+      /* bottom */
+    linear-gradient(to right, white, white) bottom / 100% $border no-repeat,
+      /* left */
+    linear-gradient(to bottom, var(--primary), white) left / $border 100% no-repeat,
+
+}
+
+
+.inside-border {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: colors.$surface;
+  border: 1px solid colors.$border;
+  padding: var(--gap-xl);
+  gap: var(--gap-md);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  @include mixins.glowing(var(--primary));
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base), sans-serif;
+}
+
+.card-date {
+  @include mixins.glowing(var(--secondary));
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-base), sans-serif;
+}
+
+.card-content{
+  flex: 1;
+  background-color: darkred;
+}
