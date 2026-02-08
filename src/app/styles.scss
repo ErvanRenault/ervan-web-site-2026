@@ -11,7 +11,10 @@ body {
   margin: 0;
   background-color: colors.$background-primary;
 
-  app-route {
-    display: flex;
-  }
+
+}
+
+.app-route {
+  display: flex;
+  flex: 1;
 }
