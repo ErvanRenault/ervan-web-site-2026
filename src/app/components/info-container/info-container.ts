@@ -1,3 +1,4 @@
+  templateUrl: './info-container.html',
 import {Component, Input, TemplateRef} from '@angular/core';
 import {NgTemplateOutlet} from '@angular/common';
 
