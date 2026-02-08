@@ -1,1 +1,20 @@
-<app-info-container></app-info-container>
+<div class="left-container">
+LEFT
+</div>
+<div class="right-container">
+  <app-info-container [content]="myContent"></app-info-container>
+
+  <div class="stack-container">
+    <app-info-container [content]="myContent"></app-info-container>
+  </div>
+
+
+  <ng-template #myContent>
+    <p>This is projected via ng-template</p>
+    <button>Click me</button>
+  </ng-template>
+
+
+</div>
+
+

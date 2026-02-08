@@ -1,4 +1,27 @@
 :host{
   display: flex;
   flex: 1;
+  gap: var(--gap-xl);
 }
+
+.left-container{
+  display: flex;
+}
+
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  flex: 1;
+}
+
+
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--gap-xl);
+}
+
+
