@@ -5,16 +5,18 @@ $border: 1px;
 :host {
   display: flex;
   flex: 1;
-  padding: var(--gap-lg);
-  background: /* top */
-    linear-gradient(to right, var(--primary), colors.$cyan) top / 100% $border no-repeat,
-      /* right */
-    linear-gradient(to bottom, var(--primary), white) right / $border 100% no-repeat,
-      /* bottom */
-    linear-gradient(to right, white, white) bottom / 100% $border no-repeat,
-      /* left */
-    linear-gradient(to bottom, var(--primary), white) left / $border 100% no-repeat,
-
+  padding: var(--gap-md);
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  corner-shape: bevel;
+  //background: /* top */
+  //  linear-gradient(to right, var(--primary), colors.$cyan) top / 100% $border no-repeat,
+  //    /* right */
+  //  linear-gradient(to bottom, var(--primary), white) right / $border 100% no-repeat,
+  //    /* bottom */
+  //  linear-gradient(to right, white, white) bottom / 100% $border no-repeat,
+  //    /* left */
+  //  linear-gradient(to bottom, var(--primary), white) left / $border 100% no-repeat,
 }
 
 
@@ -24,6 +26,8 @@ $border: 1px;
   flex: 1;
   background-color: colors.$surface;
   border: 1px solid colors.$border;
+  border-radius: 10px;
+  corner-shape: bevel;
   padding: var(--gap-xl);
   gap: var(--gap-md);
 }

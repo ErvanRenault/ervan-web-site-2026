@@ -1,0 +1,46 @@
+<form>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Job Title</mat-label>
+    <input matInput type="text" [formField]="experienceForm.jobTitle" placeholder="e.g. Senior Frontend Developer" />
+    @if (experienceForm.jobTitle().errors()) {
+      <mat-error>Job title is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Company</mat-label>
+    <input matInput type="text" [formField]="experienceForm.company" placeholder="e.g. Acme Corp" />
+    @if (experienceForm.company().errors()) {
+      <mat-error>Company is required</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Description</mat-label>
+    <textarea matInput [formField]="experienceForm.description" rows="4" placeholder="Describe your missions & achievements..."></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Period</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate [formField]="experienceForm.startDate" placeholder="Start date" />
+      <input matEndDate [formField]="experienceForm.endDate" placeholder="End date" />
+    </mat-date-range-input>
+    <mat-hint>DD/MM/YYYY – DD/MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+    @if (experienceForm.startDate().errors()) {
+      <mat-error>Invalid start date</mat-error>
+    }
+    @if (experienceForm.endDate().errors()) {
+      <mat-error>Invalid end date</mat-error>
+    }
+  </mat-form-field>
+
+  <div class="form-actions">
+    <button mat-stroked-button type="button" (click)="reset()">Reset</button>
+    <button mat-flat-button type="button" (click)="save()">Save Experience</button>
+  </div>
+
+</form>

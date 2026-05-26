@@ -2,10 +2,12 @@
   display: flex;
   flex: 1;
   gap: var(--gap-xl);
+  padding: var(--space-3);
 }
 
 .left-container{
   display: flex;
+  width: 30%;
 }
 
 
