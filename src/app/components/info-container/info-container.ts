@@ -12,6 +12,8 @@ import {NgTemplateOutlet} from '@angular/common';
 export class InfoContainer {
 
   @Input() content!: TemplateRef<any>;
+  // optional context passed to the projected template (e.g. { $implicit: selectedStudy })
+  @Input() context?: any;
 
 
 }

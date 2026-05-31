@@ -4,6 +4,7 @@ import { DirectionArrows } from '../../components/direction-arrows/direction-arr
 import { DirectionArrowService } from '../../services/direction-arrow.service';
 import { DirectionArrowEnum } from '../../enums/direction-arrow.enum';
 import { ActivatedRoute, Router } from '@angular/router';
+import {TranslatePipe} from '@ngx-translate/core';
 
 
 interface MenuItem {
@@ -14,7 +15,8 @@ interface MenuItem {
 @Component({
   selector: 'app-home-page',
   imports: [
-    DirectionArrows
+    DirectionArrows,
+    TranslatePipe
   ],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',

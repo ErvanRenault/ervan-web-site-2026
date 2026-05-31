@@ -1,0 +1,50 @@
+{
+  "etudes": {
+    "anneeEtude1": {
+      "dateDebut": 2008,
+      "dateFin": 2010,
+      "description": "annee1.description",
+      "descriptionComplémentaire": "annee1.descriptionComplementaire",
+      "id": 0,
+      "lienVideo": "",
+      "nomFormation": "annee1.nomFormation"
+    },
+    "anneeEtude2": {
+      "dateDebut": 2010,
+      "dateFin": 2011,
+      "description": "annee2.description",
+      "descriptionComplémentaire": "annee2.descriptionComplementaire",
+      "id": 1,
+      "lienVideo": "",
+      "nomFormation": "annee2.nomFormation"
+    },
+    "anneeEtude3": {
+      "dateDebut": 2011,
+      "dateFin": 2013,
+      "description": "annee3.description",
+      "descriptionComplémentaire": "annee3.descriptionComplementaire",
+      "id": 2,
+      "lienVideo": "",
+      "nomFormation": "annee3.nomFormation"
+    },
+    "anneeEtude4": {
+      "dateDebut": 2013,
+      "dateFin": 2014,
+      "description": "annee4.description",
+      "descriptionComplémentaire": "annee4.descriptionComplementaire",
+      "id": 3,
+      "lienVideo": "https://www.youtube.com/embed/sDwrOkeHiNs",
+      "nomFormation": "annee4.nomFormation"
+    },
+    "anneeEtude5": {
+      "dateDebut": 2014,
+      "dateFin": 2017,
+      "description": "annee5.description",
+      "descriptionComplémentaire": "annee5.descriptionComplementaire",
+      "id": 4,
+      "lienVideo": "https://www.youtube.com/embed/zDNR6vT2QVM",
+      "nomFormation": "annee5.nomFormation"
+    }
+  }
+}
+

@@ -1,15 +1,15 @@
 <div class="inside-border">
   <div class="header">
-    <span class="card-title">CODE-IT</span>
+    <span class="card-title">{{context?.$implicit?.nomFormation}}</span>
     <span class="card-date">
-        Septembre 2023
+        {{context?.$implicit?.dateDebut}} - {{context?.$implicit?.dateFin || 'Present'}}
     </span>
 
   </div>
 
   <div class="card-content">
     <ng-container
-      *ngTemplateOutlet="content">
+      *ngTemplateOutlet="content; context: context">
     </ng-container>
   </div>
 

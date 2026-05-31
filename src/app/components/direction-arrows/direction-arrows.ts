@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import {Component, HostBinding, HostListener, Input} from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { DirectionArrowService } from '../../services/direction-arrow.service';
 import { DirectionArrowEnum } from '../../enums/direction-arrow.enum';
@@ -8,10 +8,15 @@ import { DirectionArrowEnum } from '../../enums/direction-arrow.enum';
   imports: [
     MatIcon
   ],
+  host: {
+    '[attr.position]': 'position'
+  },
   templateUrl: './direction-arrows.html',
   styleUrl: './direction-arrows.scss',
 })
 export class DirectionArrows {
+
+  @Input() position: 'left' | 'right' = 'right';
 
   @HostListener('window:keyup.arrowup')
   onArrowUp() {

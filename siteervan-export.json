@@ -1,0 +1,126 @@
+{
+  "etudes": {
+    "anneeEtude1": {
+      "dateDebut": 2008,
+      "dateFin": 2010,
+      "description": "annee1.description",
+      "descriptionComplémentaire": "annee1.descriptionComplementaire",
+      "id": 0,
+      "lienVideo": "",
+      "nomFormation": "annee1.nomFormation"
+    },
+    "anneeEtude2": {
+      "dateDebut": 2010,
+      "dateFin": 2011,
+      "description": "annee2.description",
+      "descriptionComplémentaire": "annee2.descriptionComplementaire",
+      "id": 1,
+      "lienVideo": "",
+      "nomFormation": "annee2.nomFormation"
+    },
+    "anneeEtude3": {
+      "dateDebut": 2011,
+      "dateFin": 2013,
+      "description": "annee3.description",
+      "descriptionComplémentaire": "annee3.descriptionComplementaire",
+      "id": 2,
+      "lienVideo": "",
+      "nomFormation": "annee3.nomFormation"
+    },
+    "anneeEtude4": {
+      "dateDebut": 2013,
+      "dateFin": 2014,
+      "description": "annee4.description",
+      "descriptionComplémentaire": "annee4.descriptionComplementaire",
+      "id": 3,
+      "lienVideo": "https://www.youtube.com/embed/sDwrOkeHiNs",
+      "nomFormation": "annee4.nomFormation"
+    },
+    "anneeEtude5": {
+      "dateDebut": 2014,
+      "dateFin": 2017,
+      "description": "annee5.description",
+      "descriptionComplémentaire": "annee5.descriptionComplementaire",
+      "id": 4,
+      "lienVideo": "https://www.youtube.com/embed/zDNR6vT2QVM",
+      "nomFormation": "annee5.nomFormation"
+    }
+  },
+  "experiences": {
+    "experience1": {
+      "description": "experience1.description",
+      "duree": 6,
+      "fonction": "experience1.fonction",
+      "id": 0,
+      "societe": "McDonald's",
+      "typeDuree": "experience1.typeDuree"
+    },
+    "experience2": {
+      "description": "experience2.description",
+      "duree": 1,
+      "fonction": "experience2.fonction",
+      "id": 1,
+      "societe": "Kusmi Tea",
+      "typeDuree": "experience2.typeDuree"
+    },
+    "experience3": {
+      "description": "experience3.description",
+      "duree": 1,
+      "fonction": "experience3.fonction",
+      "id": 2,
+      "societe": "Bolloré",
+      "typeDuree": "experience1.typeDuree"
+    },
+    "experience4": {
+      "date": "01/02/2016 - 30/06/2016",
+      "description": "experience4.description",
+      "duree": 6,
+      "fonction": "experience4.fonction",
+      "id": 3,
+      "societe": "Gaumont Pathé",
+      "typeDuree": "experience4.typeDuree"
+    },
+    "experience5": {
+      "date": "",
+      "description": "experience5.description",
+      "duree": 1,
+      "fonction": "experience5.fonction",
+      "id": 4,
+      "societe": "PALME",
+      "typeDuree": "experience5.typeDuree"
+    },
+    "experience6": {
+      "date": "01/05/2013 - 30/06/2013",
+      "description": "experience6.description",
+      "duree": 2,
+      "fonction": "experience6.fonction",
+      "id": 5,
+      "societe": "WeEnjoy",
+      "typeDuree": "experience6.typeDuree"
+    },
+    "experience7": {
+      "description": "experience7.description",
+      "duree": 2,
+      "fonction": "experience7.fonction",
+      "id": 6,
+      "societe": "Ectaris",
+      "typeDuree": "experience7.typeDuree"
+    },
+    "experience8": {
+      "date": "06/03/2017 - 31/08/2017",
+      "description": "experience8.description",
+      "duree": 6,
+      "fonction": "experience8.fonction",
+      "id": 7,
+      "societe": "Capgemini",
+      "typeDuree": "experience8.typeDuree"
+    },
+    "experience9": {
+      "date": "04/07/2018 - 31/12/2018",
+      "description": "experience9.description",
+      "fonction": "experience9.fonction",
+      "id": 8,
+      "societe": "Capgemini"
+    }
+  }
+}

@@ -1,1 +1,33 @@
-<p>time-line works!</p>
+<div class="timeline" #timelineContainer>
+  {{this.directionService.directionSignal()}}
+  <div class="center-line"></div>
+
+  <div class="nodes">
+    @for(item of items; track item; let i = $index) {
+      <div
+        #timelineNode
+        class="node"
+        [class.left]="i % 2 === 0"
+        [class.right]="i % 2 === 1"
+        (click)="selectIndex(i)">
+
+        <div class="node-content">
+          <div class="year">{{item.dateDebut}}</div>
+          <div class="title">{{item.nomFormation}}</div>
+        </div>
+
+        <div class="node-dot" [class.selected]="i === selectedIndex()"></div>
+      </div>
+    }
+
+  </div>
+
+  <div class="character" [style.top]="placeholderTop()" title="character placeholder">
+<!--    <img src="assets/character-placeholder.svg" alt="Character Placeholder" />-->
+  </div>
+
+</div>
+
+<app-direction-arrows></app-direction-arrows>
+
+

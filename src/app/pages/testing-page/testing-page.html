@@ -1,17 +1,22 @@
 <div class="left-container">
-<app-time-line></app-time-line>
+  <app-time-line [items]="etudesArray" (selectionChange)="onSelect($event)"></app-time-line>
 </div>
 <div class="right-container">
-  <app-info-container [content]="myContent"></app-info-container>
+  <app-info-container [content]="myContent" [context]="{ $implicit: selectedStudy() }"></app-info-container>
 
   <div class="stack-container">
-    <app-info-container [content]="myContent"></app-info-container>
+    <app-info-container [content]="myContent" [context]="{ $implicit: selectedStudy() }"></app-info-container>
   </div>
 
-  <ng-template #myContent>
-    <p>This is projected via ng-template</p>
-    <button>Click me</button>
+  <ng-template #myContent let-study>
+    @if (study) {
+      <div>
+        <h3>{{ study.nomFormation }}</h3>
+        <p><strong>{{ study.dateDebut }} - {{ study.dateFin }}</strong></p>
+        <p>{{ study.description }}</p>
+      </div>
+    } @else {
+      <p>No study selected</p>
+    }
   </ng-template>
 </div>
-
-

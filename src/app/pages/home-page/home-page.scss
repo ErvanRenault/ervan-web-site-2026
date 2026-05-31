@@ -1,13 +1,12 @@
 @use 'colors' as color;
 :host {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
   gap: var(--gap-md);
-  height: 100%;
-  width: 100%;
 }
 
 .menu-item {

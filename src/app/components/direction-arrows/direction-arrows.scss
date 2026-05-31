@@ -1,12 +1,11 @@
-@use 'colors';
 :host {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: var(--space-3);
+  bottom: var(--space-3);
   opacity: 30%;
   pointer-events: none;
 }
