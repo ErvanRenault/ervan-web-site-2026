@@ -1,5 +1,108 @@
 {
   "HOME": {
-    "TITLE": "Welcome"
+    "INTRO": "Vous pourrez y trouver, entre autre, mon blog que j'ai réalisé pour mon voyage en Australie, pour le reste à vous de le découvrir...",
+    "TITRE": "Hey ! Bienvenue sur mon site !",
+    "VOYAGE": "RDV sur le blog !"
+  },
+  "FOOTER": {
+    "CREATION": "Site réalisé par Ervan Renault.",
+    "MAIL": {
+      "SUJET": "Sujet :"
+    }
+  },
+  "EXPERIENCES": {
+    "EXPERIENCE1": {
+      "DESCRIPTION": "Ce poste m'a permis de decouvrir le travail en équipe dans le monde du travail. Ma mission était principalement hôte de caisse mais il m'arrivait aussi d'être en cuisine. Cela m'a permis de pouvoir apprendre à travailler sous pression et de gérer mon temps de travail de façon la plus optimale possible.",
+      "FONCTION": "Employé polyvalent",
+      "TYPEDUREE": "mois"
+    },
+    "EXPERIENCE2": {
+      "DESCRIPTION": "Travail saisonnier. J'ai travaillé à la chaine, en équipe, afin de préparer les différents produits proposé par la société. Ce travail demandait de la rigueur et de la rapidité.",
+      "FONCTION": "Manutentionnaire",
+      "TYPEDUREE": "mois"
+    },
+    "EXPERIENCE3": {
+      "DESCRIPTION": "Travail saisonnier. Je devais reconditionner des produits, principalement alimentaire, afin qu'ils soient renvoyés dans différents pays.",
+      "FONCTION": "Manutentionnaire",
+      "TYPEDUREE": "mois"
+    },
+    "EXPERIENCE4": {
+      "DESCRIPTION": "Pour ce travail étudiant j'avais plusieurs tâches possibles : accueil de cinéma, vente de tickets et de confiserie, accompagnement en salle, aide aux clients. Ce travail m'a énormément plu, j'ai pu voir le fonctionnement d'un établissement tel qu'un cinéma. Ce fut une expérience très enrichissante sur le plan professionnel comme personnel.",
+      "FONCTION": "Agent de cinéma",
+      "TYPEDUREE": "mois"
+    },
+    "EXPERIENCE5": {
+      "DESCRIPTION": "La PALME est l'association des étudiants en Informatique de Rennes 1. Pendant mon mandat j'ai pu apprendre à gérer une organisation étudiante en organisant des événements, servir d'intermédiaire entre étudiants et enseignants. J'ai aussi pu organiser, avec l'aide de mon bureau et d'un autre BDE en association avec la direction du département informatique de Rennes 1, un gala qui réunit près de 400 personnes dont 300 étudiants afin de célébrer l'anniversaire de notre établissement.",
+      "FONCTION": "Président d'association",
+      "TYPEDUREE": "an"
+    },
+    "EXPERIENCE6": {
+      "DESCRIPTION": "Ce stage de M1 m'a permis de découvrir le monde de la startup. Durant ce stage j'ai pu m'initier à Symfony2 et au CMS Drupal.",
+      "FONCTION": "Stagiaire",
+      "TYPEDUREE": "mois"
+    },
+    "EXPERIENCE7": {
+      "DESCRIPTION": "Premier stage dans le monde de l'entreprise. Il avait pour but de faire de la revue de code afin d'optimiser l'application mais aussi d'ajouter de nouvelles fonctionnalités. Les technologies utilisées étaient le Javascript et le PHP.",
+      "FONCTION": "Stagiaire",
+      "TYPEDUREE": "mois"
+    },
+    "EXPERIENCE8": {
+      "DESCRIPTION": "Ce stage de validation de Master avait pour but la création d'un POC en Angular. Durant ce stage j'ai travaillé sur la refonte d'une application Orange puis une application gouvernementale chez Capgemini. Ce projet m'a permis de consolider mes compétences en Angular et d'apprendre de nouvelles techniques de développement.",
+      "FONCTION": "Stagiaire et Ingénieur Logiciel",
+      "TYPEDUREE": "mois"
+    },
+    "EXPERIENCE9": {
+      "DESCRIPTION": "Je suis actuellement en voyage en Australie pour découvrir ce pays, renforcer mon anglais et apprendre une nouvelle culture...",
+      "FONCTION": "Voyageur"
+    }
+  },
+  "ETUDES": {
+    "CHOIX": "Sélectionnez une année",
+    "ANNEE1": {
+      "DESCRIPTION": "Baccalauréat STL au Lycée Robert Schuman au Havre, France.",
+      "DESCRIPTIONCOMPLEMENTAIRE": "Mention assez bien.",
+      "NOMFORMATION": "Baccalauréat STL"
+    },
+    "ANNEE2": {
+      "DESCRIPTION": "Diplôme d'études supérieures, Le Havre, France.",
+      "DESCRIPTIONCOMPLEMENTAIRE": "Année de remise à niveau scientifique et découverte de l'informatique.",
+      "NOMFORMATION": "DUPRES"
+    },
+    "ANNEE3": {
+      "DESCRIPTION": "DUT Informatique à l'Université du Havre.",
+      "DESCRIPTIONCOMPLEMENTAIRE": "Apprentissage du Java, SQL, Tomcat, bash...",
+      "NOMFORMATION": "DUT Informatique"
+    },
+    "ANNEE4": {
+      "DESCRIPTION": "Licence 3 et Bachelor en Irlande (ERASMUS).",
+      "DESCRIPTIONCOMPLEMENTAIRE": "Unity, Blender, C#, gestion de projet.",
+      "NOMFORMATION": "Licence 3 Informatique"
+    },
+    "ANNEE5": {
+      "DESCRIPTION": "Master informatique à Rennes.",
+      "DESCRIPTIONCOMPLEMENTAIRE": "Java, AngularJS, Unity, Blender, réalité augmentée.",
+      "NOMFORMATION": "MITIC"
+    }
+  },
+  "SKILLS": {
+    "EDUCATION": "Études",
+    "EXPERIENCES": "Expériences",
+    "MAINTENANT": "En ce moment...",
+    "TITREEXPERIENCES": {
+      "INFORMATIQUE": "Expériences Informatique",
+      "AUTRE": "Autres expériences",
+      "TECH": "Technologies et outils de développement"
+    }
+  },
+  "BLOG": {
+    "INSTAGRAM": "Pour plus de photos rendez-vous sur mon compte Instagram."
+  },
+  "DETAILS": {
+    "PHOTO1": "Nous sommes arrivés à Melbourne le 29 décembre 2018...",
+    "PHOTO2": "Nous sommes arrivés en Tasmanie le 10 janvier...",
+    "PHOTO3": "Arrivés à St Helens...",
+    "PHOTO4": "Pause au parc national de Freycinet...",
+    "PHOTO5": "Road trip vers Cairns...",
+    "PHOTO6": "Fraser Island..."
   }
 }

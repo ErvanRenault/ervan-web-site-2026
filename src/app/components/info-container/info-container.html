@@ -1,6 +1,6 @@
 <div class="inside-border">
   <div class="header">
-    <span class="card-title">{{context?.$implicit?.nomFormation}}</span>
+    <span class="card-title">{{'ETUDES.' + context?.$implicit?.nomFormation | uppercase | translate}}</span>
     <span class="card-date">
         {{context?.$implicit?.dateDebut}} - {{context?.$implicit?.dateFin || 'Present'}}
     </span>

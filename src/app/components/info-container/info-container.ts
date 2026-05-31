@@ -1,10 +1,13 @@
 import {Component, Input, TemplateRef} from '@angular/core';
-import {NgTemplateOutlet} from '@angular/common';
+import {NgTemplateOutlet, UpperCasePipe} from '@angular/common';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-info-container',
   imports: [
-    NgTemplateOutlet
+    NgTemplateOutlet,
+    UpperCasePipe,
+    TranslatePipe
   ],
   templateUrl: './info-container.html',
   styleUrl: './info-container.scss',

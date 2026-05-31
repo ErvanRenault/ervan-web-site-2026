@@ -19,10 +19,11 @@ import {CommonModule} from '@angular/common';
 import {DirectionArrowService} from '../../services/direction-arrow.service';
 import {DirectionArrowEnum} from '../../enums/direction-arrow.enum';
 import {DirectionArrows} from '../direction-arrows/direction-arrows';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-time-line',
-  imports: [CommonModule, DirectionArrows],
+  imports: [CommonModule, DirectionArrows, TranslatePipe],
   templateUrl: './time-line.html',
   styleUrl: './time-line.scss',
 })

@@ -2,6 +2,8 @@ import {Component, OnInit, signal} from '@angular/core';
 import {InfoContainer} from '../../components/info-container/info-container';
 import {TimeLine} from '../../components/time-line/time-line';
 import {HttpClient} from '@angular/common/http';
+import {UpperCasePipe} from '@angular/common';
+import {TranslatePipe} from '@ngx-translate/core';
 
 export interface Study {
   id: number;
@@ -15,7 +17,9 @@ export interface Study {
   selector: 'app-testing-page',
   imports: [
     InfoContainer,
-    TimeLine
+    TimeLine,
+    UpperCasePipe,
+    TranslatePipe
   ],
   templateUrl: './testing-page.html',
   styleUrl: './testing-page.scss',

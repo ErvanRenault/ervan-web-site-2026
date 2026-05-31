@@ -1,0 +1,109 @@
+{
+    "home": {
+        "titre": "Hey ! Welcome at my website !",
+        "intro": "Check out my blog That I have made for my journey in Australia and you could find other things about me as well...",
+        "voyage": "Check my blog !"
+    },
+    "footer": {
+        "creation": "Website made by Ervan Renault.",
+        "mail": {
+            "sujet": "Subject :"
+        }
+    },
+    "experiences": {
+        "experience1": {
+            "description": "Mcdonald's brought team work and how to work in a rush and with efficiency.",
+            "fonction": "Employee, cashier/cooker",
+            "typeDuree": "month"
+        },
+        "experience2": {
+            "description": "The main goal of this job was to wark fast to make commands.",
+            "fonction": "Warehouseman",
+            "typeDuree": "month"
+        },
+        "experience3": {
+            "description": "I this job I had to repack product to send them in different country. I had to act in team and fast.",
+            "fonction": "Warehouseman",
+            "typeDuree": "month"
+        },
+        "experience4": {
+            "description": "I was a cinema agent, I had to sell tickets and manage the sweetshop. But I also do the cleaning and the managing of people waiting for the movie in case where the crowd was big.",
+            "fonction": "Cinema agent",
+            "typeDuree": "month"
+        },
+        "experience5": {
+            "description": "Called PALME, this assotiation was create to create a community for the students. Organize events, like parties, meetings with companies or other associations, student or not.",
+            "fonction": "President of the school association",
+            "typeDuree": "year"
+        },
+        "experience6": {
+            "description": "This internship allow me to discover the startup. I had to create new modules for the application used by the employee which was to manage some points of the application in a easy way. I had to use Symfony 2, Drupal and Java (7)",
+            "fonction": "Trainee",
+            "typeDuree": "month"
+        },
+        "experience7": {
+            "description": "This was my first internship in computer science. I had to create HTML pages using PHP and javascript in an existing application to generate dangerous areas for chimical products.",
+            "fonction": "Trainee",
+            "typeDuree": "month"
+        },
+        "experience8": {
+            "description": "This intership was the final step for my master degree. I had, at the first place, create a Proof Of Concept (POC) for a telecomunication company to manage their own client profils. For this project I had to use Angular (2) and TypeScript. Once this project was over, I moved to another project where I had to do refactoring in Java in an existing application. After my internship I have continue to work at Capgemini as an Angular developer and I worked the next year on an governement application which was a rework of an existing project.",
+            "fonction": "Trainee and Software engineer",
+            "typeDuree": "month"
+        },
+        "experience9": {
+            "description": "I left France to go in Australia. I wanted to travel and learn about a new culture and improve my english...",
+            "fonction": "Traveler"
+        }
+    },
+    "etudes": {
+        "choix": "Select a year",
+        "annee1": {
+            "description": "Chemistry dregree at the Robert Schumann high school in Le Havre.",
+            "descriptionComplementaire": "Degree of chemistry with a speciality in industrial chemistry with honors.",
+            "nomFormation": "Laboratory chemistry degree."
+        },
+        "annee2": {
+            "description": "Graduate Degree.",
+            "descriptionComplementaire": "This diploma allowed me to get access to another kind of studies. Indeed, after this degree I could chose computer science instead of keep going into chemical studies.",
+            "nomFormation": "DUPRES, Diplôme d'Université de Préparation aux Études Scientifiques."
+        },
+        "annee3": {
+            "description": "Diploma of Higher Education",
+            "descriptionComplementaire": "During this diploma I learn Java from the basics and more through projects. I also learn how databases were organized, using SQL, but also used Tomcat, and discover base of other language like  ",
+            "nomFormation": "DUT computer science"
+        },
+        "annee4": {
+            "description": "Bachelor of computer science as an international student in Ireland.",
+            "descriptionComplementaire": "During this year I had 3 diplomas to get: the bachelor degree from Ireland, the french diploma and a diploma which shows that I have done one year as an international student (for this one I had to pass a english test with and a thesis). This year allow me to learn about C#, Blender and Unity but also to improve my skills in Java. Exept the technical side, I also improve my english and learn about Ireland. It was a great opportunity for me to do such a journey.",
+            "nomFormation": "Bachelor of computer science"
+        },
+        "annee5": {
+            "description": "Master degree, Rennes, France.",
+            "descriptionComplementaire": "During my master, I mostly improved my skills in Java and I also learn about Design Pattern. At the end of my first year, with my workgroup, we had to create an android application. It was a game, using the technologie of GPS, bluetooth and Java to create an 'Cops and Rubber' game (see video below). During my second year I learn abour angularJS and the main principes of developpement. I also took Virtual Reality, Augmented reality and modeling classes. With my knowledge from my bachelor degree it was a good oportunity for me to learn more about those technologies (C#, Blender, Unity...). I created a level of car race and an augmented reality puzzle.",
+            "nomFormation": "MITIC, Méthodes Informatiques de l'Information et de la Communication (Methodes of communications and informations)"
+        }
+    },
+    "skills": {
+        "education": "Education",
+        "experiences": "Job experiences",
+        "maintenant": "Now...",
+        "titreExperiences": {
+            "informatique": "Computer science experiences",
+            "autre": "Other experiences",
+            "tech": "Technologies and developement tools"
+        }
+    },
+    "blog": {
+        "instagram": "For more pictures, go on my Instagram account."
+    },
+    "details": {
+        "photo1": "After we arrived on the 29th of december, we slept for 12 hours. The first week was a lot of visits, parcs, city center, chinatown, St Kilda... The New Year's eve was great, we've met a lot of people who were visiting as well, from many countries, no one knew each other but it was a really fun night and the firework was beautifull, the buildings was on fire and colorfull. The beach of St Kilda is a very nice place, we went by 42°, we got burned but worth it.",
+        "photo2": "We arrived on the 10th of January, we have landed in Launceston, in Tasmania and we have visited the city and especially 'The Gorge' wich is a beautiful place. We stayed in a bagpacker accommodation and the personal was lovely. During the night we have met few people and we had dinner together and did a barbecue. The next day we get a car and we have started our trip in Tasmania, driving to St Helens and 'The Bay Of Fire'...",
+        "photo3": "When we arrived in St Helens, we went to do shopping to get food and water, because we went in a camground, wich was free but in the nature and we needed to bring everything. We bought a tent and decided to go camping by our own. We saw a wild wallaby but to far to take a picture. We have spend the rest of the day visiting around and tried to find wild animals. During the night some animals were around the tent we were a bit scared but it was funny. Next day we left the camping to Swansea where we booked a backpaker room.",
+        "photo4": "Bit a rest after hikking in the forest at the Wineglass bay...",
+        "photo5": "I left Melbourne with new friends, we are doing a road trip to Cairns, and on the way we had a lot of activities. On of th emost exciting was the surf sessions, I did 3 and everybody was able to stand and take the waves by themself at the end. It was so cool that I decide to do more surfing when I will be back in France. The session were in Bayron Bay, a beautiful city a bit old in the design. The second and third session was at Agnes Water where we went only for surfing because after there is the great coral breef which prevent the good waves to come.",
+        "photo6": "During two day, we went to Fraser ISland, an island where everything can hurt you but it was okay actually, if you are careful enough. We have seen a dingo but you can't touch them or be alone to see them otherwise they attack you and can kill you. We went into beautiful lakes, like the Mckenzie lake. During these two days, we drove a 4wd car, it was awesome, the feelings were so cool on the sand, we drove on the beach with the sea next to us and in the lands, still in the sand."
+
+    }
+}

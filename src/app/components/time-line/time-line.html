@@ -12,8 +12,8 @@
         (click)="selectIndex(i)">
 
         <div class="node-content">
-          <div class="year">{{item.dateDebut}}</div>
-          <div class="title">{{item.nomFormation}}</div>
+          <div class="year">  {{'ETUDES.' + item.dateDebut | uppercase | translate}}</div>
+          <div class="title"> {{'ETUDES.' + item.nomFormation | uppercase | translate}}</div>
         </div>
 
         <div class="node-dot" [class.selected]="i === selectedIndex()"></div>
@@ -22,9 +22,7 @@
 
   </div>
 
-  <div class="character" [style.top]="placeholderTop()" title="character placeholder">
-<!--    <img src="assets/character-placeholder.svg" alt="Character Placeholder" />-->
-  </div>
+  <div class="character" [style.top]="placeholderTop()" title="character placeholder"></div>
 
 </div>
 

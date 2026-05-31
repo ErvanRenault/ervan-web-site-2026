@@ -11,9 +11,7 @@
   <ng-template #myContent let-study>
     @if (study) {
       <div>
-        <h3>{{ study.nomFormation }}</h3>
-        <p><strong>{{ study.dateDebut }} - {{ study.dateFin }}</strong></p>
-        <p>{{ study.description }}</p>
+        <p>{{ 'ETUDES.' + study.description | uppercase | translate }}</p>
       </div>
     } @else {
       <p>No study selected</p>
