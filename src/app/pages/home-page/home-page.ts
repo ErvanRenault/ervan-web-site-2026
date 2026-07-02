@@ -1,10 +1,9 @@
-import { AfterViewInit, Component, effect, HostListener, OnInit, signal, untracked } from '@angular/core';
-import { SoundService } from '../../services/sound.service';
-import { DirectionArrows } from '../../components/direction-arrows/direction-arrows';
-import { DirectionArrowService } from '../../services/direction-arrow.service';
-import { DirectionArrowEnum } from '../../enums/direction-arrow.enum';
-import { ActivatedRoute, Router } from '@angular/router';
-import {TranslatePipe} from '@ngx-translate/core';
+import {AfterViewInit, Component, effect, HostListener, OnInit, signal, untracked} from '@angular/core';
+import {SoundService} from '../../services/sound.service';
+import {DirectionArrows} from '../../components/direction-arrows/direction-arrows';
+import {DirectionArrowService} from '../../services/direction-arrow.service';
+import {DirectionArrowEnum} from '../../enums/direction-arrow.enum';
+import {Router} from '@angular/router';
 
 
 interface MenuItem {
@@ -15,8 +14,7 @@ interface MenuItem {
 @Component({
   selector: 'app-home-page',
   imports: [
-    DirectionArrows,
-    TranslatePipe
+    DirectionArrows
   ],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',
