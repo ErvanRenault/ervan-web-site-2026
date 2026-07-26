@@ -1,13 +1,15 @@
-import {Component, HostBinding, HostListener, inject, Input, signal} from '@angular/core';
+import {Component, HostBinding, HostListener, inject, input, Input, signal} from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { DirectionArrowService } from '../../services/direction-arrow.service';
 import { DirectionArrowEnum } from '../../enums/direction-arrow.enum';
 import {SoundService} from '../../services/sound.service';
+import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'app-direction-arrows',
   imports: [
-    MatIcon
+    MatIcon,
+    NgClass
   ],
   host: {
     '[attr.position]': 'position'
@@ -18,6 +20,9 @@ import {SoundService} from '../../services/sound.service';
 export class DirectionArrows {
 
   @Input() position: 'left' | 'right' = 'right';
+
+  allowArrowLeftRight = input(true);
+  allowArrowUpDown = input<boolean>(true);
 
   soundService = inject(SoundService);
   arrowTouchService = inject(DirectionArrowService);
@@ -48,7 +53,16 @@ export class DirectionArrows {
     this.directionArrowService.volumeEnabled.update(v => !v);
   }
 
-  private updateTouchArrowValue(directionEnum: DirectionArrowEnum) {
+  private updateTouchArrowValue(directionEnum: DirectionArrowEnum): void {
+
+    if(!this.allowArrowLeftRight() && (directionEnum === DirectionArrowEnum.Left || directionEnum === DirectionArrowEnum.Right)) {
+      return;
+    }
+
+    if(!this.allowArrowUpDown() && (directionEnum === DirectionArrowEnum.Up || directionEnum === DirectionArrowEnum.Down)) {
+      return;
+    }
+
     this.arrowTouchService.directionSignal.set(directionEnum);
 
     if(this.directionArrowService.volumeEnabled()) {

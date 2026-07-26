@@ -32,6 +32,10 @@
   color: var(--secondary);
 }
 
+.arrow-disabled {
+  color: grey;
+}
+
 .direction-container{
   display: flex;
   flex-direction: column;

@@ -1,11 +1,11 @@
 <div class="square clickable" (click)="toggleVolume()"><mat-icon class="arrow">{{directionArrowService.volumeEnabled() ? 'volume_up' : 'volume_off' }} </mat-icon></div>
 
 <div class="direction-container">
-  <div class="square" [id]="0"><mat-icon class="arrow">arrow_upward_alt</mat-icon></div>
+  <div class="square" [id]="0"><mat-icon class="arrow" [ngClass]="{'arrow-disabled': !this.allowArrowUpDown}">arrow_upward_alt</mat-icon></div>
   <div class="bottom-arrow-container">
-    <div class="square" [id]="1"><mat-icon class="arrow">arrow_backward_alt</mat-icon></div>
-    <div class="square" [id]="3"><mat-icon class="arrow">arrow_downward_alt</mat-icon></div>
-    <div class="square" [id]="2"><mat-icon class="arrow">arrow_forward_alt</mat-icon></div>
+    <div class="square" [id]="1"><mat-icon class="arrow" [ngClass]="{'arrow-disabled': !this.allowArrowLeftRight}">arrow_backward_alt</mat-icon></div>
+    <div class="square" [id]="3"><mat-icon class="arrow" [ngClass]="{'arrow-disabled': !this.allowArrowUpDown}">arrow_downward_alt</mat-icon></div>
+    <div class="square" [id]="2"><mat-icon class="arrow" [ngClass]="{'arrow-disabled': !this.allowArrowLeftRight}">arrow_forward_alt</mat-icon></div>
   </div>
 </div>
 

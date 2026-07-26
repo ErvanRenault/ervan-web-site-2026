@@ -1,27 +1,26 @@
 import {
-  Component,
-  Input,
-  Output,
-  EventEmitter,
-  signal,
-  effect,
-  OnInit,
-  OnChanges,
-  SimpleChanges,
-  ElementRef,
-  ViewChildren,
-  ViewChild,
-  QueryList,
   AfterViewInit,
+  Component,
+  effect,
+  ElementRef,
+  EventEmitter,
+  HostListener,
   inject,
-  HostListener
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  QueryList,
+  signal,
+  SimpleChanges,
+  ViewChild,
+  ViewChildren
 } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {DirectionArrowService} from '../../services/direction-arrow.service';
 import {DirectionArrowEnum} from '../../enums/direction-arrow.enum';
 import {DirectionArrows} from '../direction-arrows/direction-arrows';
 import {TranslatePipe} from '@ngx-translate/core';
-import {SoundService} from '../../services/sound.service';
 
 @Component({
   selector: 'app-time-line',

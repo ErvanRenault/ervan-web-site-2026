@@ -1,5 +1,4 @@
 import {AfterViewInit, Component, effect, HostListener, OnInit, signal, untracked} from '@angular/core';
-import {SoundService} from '../../services/sound.service';
 import {DirectionArrows} from '../../components/direction-arrows/direction-arrows';
 import {DirectionArrowService} from '../../services/direction-arrow.service';
 import {DirectionArrowEnum} from '../../enums/direction-arrow.enum';
