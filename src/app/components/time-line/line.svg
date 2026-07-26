@@ -1,0 +1,13 @@
+<svg class="timeline-line" viewBox="0 0 200 1000" preserveAspectRatio="none">
+  <path
+    d="     M100 0
+            L40 120
+            L160 240
+            L40 360
+            L160 480
+            L40 600
+            L160 720
+            L100 840
+        "
+  />
+</svg>

@@ -39,12 +39,7 @@ export class HomePage implements OnInit, AfterViewInit {
 
   selected = signal<MenuItem>(this.menuItems[0]);
 
-  constructor(private soundService: SoundService, private directionArrowService: DirectionArrowService, private router: Router) {
-    effect(() => {
-      if (this.selected()) {
-        this.soundService.playSelect();
-      }
-    });
+  constructor(private directionArrowService: DirectionArrowService, private router: Router) {
     effect(() => {
       const direction = this.directionArrowService.directionSignal();
       if (direction == null) return;

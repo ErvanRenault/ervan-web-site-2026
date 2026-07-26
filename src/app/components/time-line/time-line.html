@@ -1,31 +1,58 @@
 <div class="timeline" #timelineContainer>
-  {{this.directionService.directionSignal()}}
-  <div class="center-line"></div>
+
+  <svg class="timeline-svg">
+
+    <path
+      #path
+      class="timeline-path"
+      [attr.d]="timelinePath()">
+    </path>
+
+  </svg>
 
   <div class="nodes">
+
     @for(item of items; track item; let i = $index) {
+
       <div
         #timelineNode
         class="node"
         [class.left]="i % 2 === 0"
         [class.right]="i % 2 === 1"
+        [style.top.px]="nodeY(i)"
         (click)="selectIndex(i)">
 
         <div class="node-content">
-          <div class="year">  {{'ETUDES.' + item.dateDebut | uppercase | translate}}</div>
-          <div class="title"> {{'ETUDES.' + item.nomFormation | uppercase | translate}}</div>
+
+          <div class="year">
+            {{ 'ETUDES.' + item.dateDebut | uppercase | translate }}
+          </div>
+
+          <div class="title">
+            {{ 'ETUDES.' + item.nomFormation | uppercase | translate }}
+          </div>
+
         </div>
 
-        <div class="node-dot" [class.selected]="i === selectedIndex()"></div>
       </div>
+
+      <div
+        class="node-dot"
+        [style.left.px]="nodeX(i)"
+        [style.top.px]="nodeY(i)"
+        [class.selected]="i === selectedIndex()">
+      </div>
+
     }
 
   </div>
 
-  <div class="character" [style.top]="placeholderTop()" title="character placeholder"></div>
+  <div
+    class="character"
+    [style.left.px]="characterLeft()"
+    [style.top.px]="characterTop()">
+  </div>
 
 </div>
 
 <app-direction-arrows></app-direction-arrows>
-
-

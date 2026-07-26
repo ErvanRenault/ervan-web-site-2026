@@ -1,11 +1,11 @@
 :host {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   position: absolute;
   right: var(--space-3);
   bottom: var(--space-3);
+  gap: var(--gap-md);
   opacity: 30%;
   pointer-events: none;
 }
@@ -14,22 +14,33 @@
   display: flex;
 }
 
-.arrow-container {
+.square {
   width: 25px;
   height: 25px;
   border: 1px solid var(--primary);
 }
 
-.arrow-container.active {
+.square.active {
   background-color: lightgray;
 }
 
-.arrow-container:active {
+.square:active {
   background-color: lightgray;
 }
 
 .arrow {
   color: var(--secondary);
+}
+
+.direction-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clickable{
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 

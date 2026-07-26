@@ -1,7 +1,8 @@
-import {Component, HostBinding, HostListener, Input} from '@angular/core';
+import {Component, HostBinding, HostListener, inject, Input, signal} from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { DirectionArrowService } from '../../services/direction-arrow.service';
 import { DirectionArrowEnum } from '../../enums/direction-arrow.enum';
+import {SoundService} from '../../services/sound.service';
 
 @Component({
   selector: 'app-direction-arrows',
@@ -17,6 +18,11 @@ import { DirectionArrowEnum } from '../../enums/direction-arrow.enum';
 export class DirectionArrows {
 
   @Input() position: 'left' | 'right' = 'right';
+
+  soundService = inject(SoundService);
+  arrowTouchService = inject(DirectionArrowService);
+
+  readonly directionArrowService = inject(DirectionArrowService);
 
   @HostListener('window:keyup.arrowup')
   onArrowUp() {
@@ -38,12 +44,16 @@ export class DirectionArrows {
     this.updateTouchArrowValue(DirectionArrowEnum.Right);
   }
 
-  constructor(private arrowTouchService: DirectionArrowService) {
+  public toggleVolume() {
+    this.directionArrowService.volumeEnabled.update(v => !v);
   }
 
-  updateTouchArrowValue(directionEnum: DirectionArrowEnum) {
+  private updateTouchArrowValue(directionEnum: DirectionArrowEnum) {
     this.arrowTouchService.directionSignal.set(directionEnum);
 
+    if(this.directionArrowService.volumeEnabled()) {
+      this.soundService.playSelect();
+    }
     document.getElementById(directionEnum.toString())?.classList.toggle('active');
     setTimeout(() => {
       document.getElementById(directionEnum.toString())?.classList.remove('active');

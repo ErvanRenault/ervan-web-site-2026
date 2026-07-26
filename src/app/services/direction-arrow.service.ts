@@ -7,6 +7,7 @@ import { DirectionArrowEnum } from '../enums/direction-arrow.enum';
 export class DirectionArrowService {
 
   directionSignal: WritableSignal<DirectionArrowEnum | null> = signal(null);
+  volumeEnabled = signal(true);
 
   constructor() {
   }
