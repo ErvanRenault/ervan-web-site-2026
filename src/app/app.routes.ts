@@ -5,7 +5,8 @@ import {ExperienceMgmtPage} from './pages/experience-page/experience-mgmt-page.c
 
 export const routes: Routes = [
   {path: '', component: HomePage},
-  {path: 'test', component: TestingPage},
+  {path: 'test', component: TestingPage,  data: {pageName: 'Testing'},},
+  {path: 'about', component: TestingPage,  data: {pageName: 'About'},},
   {path: 'experiences-mgmt', component: ExperienceMgmtPage}
 ];
 

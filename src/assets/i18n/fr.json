@@ -1,4 +1,7 @@
 {
+  "HEADER": {
+    "STATUS": "Statut"
+  },
   "HOME": {
     "INTRO": "Vous pourrez y trouver, entre autre, mon blog que j'ai réalisé pour mon voyage en Australie, pour le reste à vous de le découvrir...",
     "TITRE": "Hey ! Bienvenue sur mon site !",
