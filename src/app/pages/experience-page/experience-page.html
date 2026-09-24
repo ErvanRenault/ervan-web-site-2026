@@ -1,0 +1,20 @@
+<div class="left-container">
+  <app-time-line [items]="etudesArray" (selectionChange)="onSelect($event)"></app-time-line>
+</div>
+<div class="right-container">
+  <app-info-container [content]="myContent" [context]="{ $implicit: selectedStudy() }"></app-info-container>
+
+  <div class="stack-container">
+    <app-info-container [content]="myContent" [context]="{ $implicit: selectedStudy() }"></app-info-container>
+  </div>
+
+  <ng-template #myContent let-study>
+    @if (study) {
+      <div>
+        <p>{{ 'ETUDES.' + study.description | uppercase | translate }}</p>
+      </div>
+    } @else {
+      <p>No study selected</p>
+    }
+  </ng-template>
+</div>

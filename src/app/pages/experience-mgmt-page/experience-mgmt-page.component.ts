@@ -14,7 +14,7 @@ interface Experience {
 }
 
 @Component({
-  selector: 'app-experience-page',
+  selector: 'app-experience-mgmt-page',
   imports: [
     MatFormField,
     MatInput,
@@ -62,9 +62,5 @@ export class ExperienceMgmtPage {
   reset(): void {
     this.experienceModel.set({ ...this.defaultExperience });
   }
-
-
-
-
 
 }

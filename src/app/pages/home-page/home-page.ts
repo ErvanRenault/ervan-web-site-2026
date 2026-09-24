@@ -30,7 +30,7 @@ export class HomePage implements OnInit, AfterViewInit {
   }
   public menuItems: MenuItem[] = [
     {label: 'About Me', route: '/about'},
-    {label: 'Experiences', route: '/about'},
+    {label: 'Experiences', route: '/experiences'},
     {label: 'Training', route: '/about'},
     {label: 'Skills', route: '/about'},
     {label: 'More', route: '/about'},
@@ -87,7 +87,7 @@ export class HomePage implements OnInit, AfterViewInit {
   }
 
   async goToPage(route: string) {
-    await this.router.navigate(['/test']);
+    await this.router.navigate([route]);
   }
 
 }
